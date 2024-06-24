@@ -37,6 +37,7 @@ Encountering issues with Cookiecutter Django? Don't hesitate to [open an issue](
 - Powered by React️
 - Production-mode frontend served by Nginx 🖥️
 - Dev environment prepped with Vite and TypeScript for instant action 🛠️
+- Tailwind CSS: A utility-first CSS framework for rapid UI development 🎨
 - Optimal production build for a smooth launch 🚀
 - Built-in linting and code formatting powered by ESLint and Prettier 🧹
 - Seamlessly integrates with popular testing libraries 🧪
