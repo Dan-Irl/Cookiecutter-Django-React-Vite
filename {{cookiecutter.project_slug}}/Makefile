@@ -17,17 +17,17 @@ PYTHON_INTERPRETER = django-react
 # Build for local development
 .PHONY: build-local
 build-local:
-	docker compose -f local.yml build
+	docker compose -f local.yml build 
 
 # Run for local development
 .PHONY: run-local
 run-local:
-	docker compose -f local.yml up
+	docker compose -f local.yml up --remove-orphans
 
 # Down for local development
 .PHONY: down-local
 down-local:
-	docker compose -f local.yml down
+	docker compose -f local.yml down --remove-orphans
 
 #################################################################################
 # Production
