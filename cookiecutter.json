@@ -2,9 +2,9 @@
   "project_name": "My Awesome Project",
   "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }}",
   "description": "Behold My Awesome Project!",
-  "author_name": "PainKiller995",
+  "author_name": "Dan Johansson",
   "domain_name": "example.com",
-  "email": "{{ cookiecutter.author_name.lower() | trim() |replace(' ', '-') }}@{{ cookiecutter.domain_name.lower() | trim() }}",
+  "email": "dan.johansson@visma.com",
   "version": "0.1.0",
   "open_source_license": [
     "MIT",
@@ -13,7 +13,7 @@
     "Apache Software License 2.0",
     "Not open source"
   ],
-  "timezone": "UTC",
+  "timezone": "CET",
   "postgresql_version": ["16", "15", "14", "13", "12"],
   "use_drf": "n",
   "use_celery": "n",

@@ -1,5 +1,5 @@
 # Use an official node runtime as a parent image
-FROM node:18-bullseye-slim
+FROM node:22-bullseye-slim
 
 # Install apt packages if needed (add package names if required)
 RUN apt-get update && apt-get install --no-install-recommends -y
@@ -15,7 +15,9 @@ WORKDIR ${APP_HOME}
 COPY ./frontend/package.json /app/
 
 # Install Node.js dependencies
-RUN npm install
+RUN npm install pnpm -g
+
+RUN pnpm install
 
 # Copy the application startup script and make it executable
 COPY ./compose/local/node/start /start
