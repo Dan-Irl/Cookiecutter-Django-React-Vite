@@ -21,8 +21,11 @@ RUN npm install
 # Copy application code to the working directory
 COPY frontend/ ${APP_HOME}
 
-# Build the frontend
-RUN npm run build
+# install pnpm package manager
+RUN npm install -g pnpm
+
+# Install Node.js dependencies
+RUN pnpm install
 
 # Stage 2: Serve the built frontend using Nginx
 FROM nginx:1.21.1-alpine
